@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+#menu-items-holder ul li{
+    @apply w-full hover:text-white md:hover:text-gray-400 hover:bg-black/80 md:hover:bg-transparent rounded-b-2xl md:rounded-none hover:text-lg md:hover:text-base
+}
+
+#menu-items-holder ul li a{
+    @apply w-full block px-6 py-2
+}
+
+#menuSwiper .swiper-slide img{
+    @apply rounded-2xl aspect-[3/4] object-cover w-auto h-96 shadow-amber-600 shadow-lg
+}
+
+#gallerySwiper .swiper-slide{
+    @apply bg-center bg-cover w-20 h-20
+}
+
+.gallerySwiper .swiper-slide img{
+    @apply w-full h-full object-cover block
+}

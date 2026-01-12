@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>landing page</title>
+  <link rel="stylesheet" href="src/output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <nav class="bg-gray-800 text-white font-bold pl-4 md:px-10 py-4 sticky top-0 z-50">
+    <div id="nav-container" class="flex justify-between items-center">
+      <div class="logo border p-3 rounded-lg">
+        <a href="index.html" class="capitalize">your logo</a>
+      </div>
+
+      <button id="menu-toggle-btn" class="md:hidden cursor-pointer" type="button">
+        <i id="menu-toggle-icon" class="fa-solid fa-bars text-3xl md:hidden"></i>
+      </button>
+      <div id="menu-items-holder" class="relative hidden md:block">
+        <ul id="menu-items-box"
+          class="absolute md:relative top-[40px] md:top-auto right-0 md:right-auto w-[40vw] md:w-auto bg-gray-600/70 md:bg-transparent rounded-b-2xl md:rounded-none md:flex">
+          <li class="menu-items"><a href="#">Home</a></li>
+          <li class="menu-items"><a href="#">About</a></li>
+          <li class="menu-items"><a href="#">Services</a></li>
+          <li class="menu-items"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero-section" style="background-image: url(src/img/barBackground.jpg)"
+    class="relative bg-cover bg-[position:50%_50%] py-16 md:py-20 px-20 md:px-40">
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div
+      class="relative bg-white/70 z-10 text-center space-y-8 px-10 md:px-20 py-10 rounded-lg text-white text-shadow-black text-shadow-lg shadow-gray-800 shadow-2xl max-w-3xl mx-auto">
+      <h1 class="text-lg md:text-4xl font-bold">
+        Welcome to Our <br />Landing Page
+      </h1>
+      <p>
+        Discover our services and offerings. We provide the best solutions for
+        your needs.
+      </p>
+      <a href="#"
+        class="bg-amber-400 font-bold px-6 py-3 rounded-2xl shadow-amber-600 shadow-lg hover:bg-amber-500 transition-colors duration-300 inline-block">Get
+        Started</a>
+    </div>
+  </section>
+
+  <section id="metaDetails" class="px-18 py-10 md:px-20 md:py-10 bg-gray-400/20">
+    <div class="container grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center mx-auto">
+      <div
+        class="h-full w-full flex flex-col items-center text-center px-8 py-4 space-y-4 shadow-lg shadow-gray-400 rounded-lg bg-white text-shadow-gray-400 text-shadow-lg">
+        <h2 class="text-black text-center px-6 py-4 text-xl font-bold">
+          Trusted by Clients
+        </h2>
+        <p>
+          <i class="fa-solid fa-star text-amber-400"></i>
+          <span>4.8 average rating</span>
+        </p>
+        <p>from 100+ reviews</p>
+      </div>
+
+      <div
+        class="h-full w-full flex flex-col items-center text-center px-8 py-4 space-y-4 shadow-lg shadow-gray-400 rounded-lg bg-white text-shadow-gray-400 text-shadow-lg">
+        <h2 class="text-black text-center px-6 py-4 text-xl font-bold">
+          Based in Thailand
+        </h2>
+        <p>Working worldwide</p>
+      </div>
+
+      <div
+        class="h-full w-full flex flex-col items-center text-center px-8 py-4 space-y-4 shadow-lg shadow-gray-400 rounded-lg bg-white text-shadow-gray-400 text-shadow-lg">
+        <h2 class="text-black text-center px-6 py-4 text-xl font-bold">
+          Avabilable for Work
+        </h2>
+        <p>Flexible hours &#8226 Fast response</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="aboutUs" class="py-20 bg-black">
+    <div id="aboutUsHolder"
+      class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 items-center justify-center px-4 md:px-20 place-items-center">
+      <div class="w-full h-full shadow-gray-700 shadow-lg rounded-2xl overflow-hidden">
+        <img src="src/img/aboutUs-hero.jpg" alt="About Us Image"
+          class="aspect-[4/3] object-cover rounded-2xl w-full h-full" />
+      </div>
+      <div class="w-full h-full p-10 md:p-20 space-y-8 text-white text-center md:text-left">
+        <h2 class="text-4xl font-bold">About Us</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium adipisci hic eligendi veniam mollitia
+          omnis assumenda sapiente repellat a molestiae excepturi aperiam, voluptatem atque?</p>
+        <a href="#"
+          class="bg-amber-400 font-bold px-6 py-3 rounded-2xl shadow-amber-600 shadow-lg hover:bg-amber-500 transition-colors duration-300 inline-block mt-8 text-shadow-black text-shadow-lg">Learn
+          More</a>
+      </div>
+  </section>
+
+  <section id="menuHighlights" class="py-20 px-10 bg-gray-800">
+    <div>
+      <div>
+        <h2 class="text-4xl text-white text-center font-bold mt-10 mb-6">Our Menu Highlights</h2>
+        <p class="text-white text-center mb-6">Explore some of our most popular menu items, crafted to perfection.</p>
+      </div>
+    </div>
+    <div class="swiper menuSwiper">
+      <div id="menuSw" class="swiper-wrapper px-10">
+        <div class="swiper-slide place-items-center w-40 h-auto text-center px-4 py-6 rounded-2xl">
+          <h2 class="text-3xl text-white text-shadow-black text-shadow-lg mb-2">Menu Item 1</h2>
+          <img src="src/img/menuItem1.jpg" alt="Menu Item 1" />
+        </div>
+        <div class="swiper-slide place-items-center w-40 h-auto text-center px-4 py-6 rounded-2xl">
+          <h2 class="text-3xl text-white text-shadow-black text-shadow-lg mb-2">Menu Item 2</h2>
+          <img src="src/img/menuItem2.jpg" alt="Menu Item 2" />
+        </div>
+        <div class="swiper-slide place-items-center w-40 h-auto text-center px-4 py-6 rounded-2xl">
+          <h2 class="text-3xl text-white text-shadow-black text-shadow-lg mb-2">Menu Item 3</h2>
+          <img src="src/img/menuItem3.jpg" alt="Menu Item 3" />
+        </div>
+        <div class="swiper-slide place-items-center w-40 h-auto text-center px-4 py-6 rounded-2xl">
+          <h2 class="text-3xl text-white text-shadow-black text-shadow-lg mb-2">Menu Item 4</h2>
+          <img src="src/img/menuItem4.jpg" alt="Menu Item 4" />
+        </div>
+        <div class="swiper-slide place-items-center w-40 h-auto text-center px-4 py-6 rounded-2xl">
+          <h2 class="text-3xl text-white text-shadow-black text-shadow-lg mb-2">Menu Item 5</h2>
+          <img src="src/img/menuItem5.jpg" alt="Menu Item 5" />
+        </div>
+      </div>
+      <div class="swiper-button-next absolute right-0"></div>
+      <div class="swiper-button-prev absolute left-0"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="text-center mt-8">
+      <a href="#"
+        class="bg-amber-400 text-white font-bold px-6 py-3 rounded-2xl shadow-amber-600 shadow-lg hover:bg-amber-500 transition-colors duration-300 inline-block text-shadow-black text-shadow-lg">View
+        Full Menu</a>
+    </div>
+  </section>
+
+  <section id="gallery" class="bg-black py-10">
+    <div>
+      <div>
+        <h2 class="text-4xl text-white text-shadow-gray-600 text-shadow-lg text-center font-bold mt-10 mb-6">Our Gallery
+        </h2>
+        <p class="text-white text-center mb-6">Explore some of our most popular menu items, crafted to perfection.</p>
+      </div>
+    </div>
+    <div class="swiper gallerySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h2 class="text-3xl text-white text-shadow-amber-400 text-shadow-md mb-2">Menu Item 1</h2>
+          <img src="src/img/menuItem1.jpg" alt="Menu Item 1" />
+        </div>
+        <div class="swiper-slide">
+          <h2 class="text-3xl text-white text-shadow-amber-400 text-shadow-md mb-2">Menu Item 2</h2>
+          <img src="src/img/menuItem2.jpg" alt="Menu Item 2" />
+        </div>
+        <div class="swiper-slide">
+          <h2 class="text-3xl text-white text-shadow-amber-400 text-shadow-md mb-2">Menu Item 3</h2>
+          <img src="src/img/menuItem3.jpg" alt="Menu Item 3" />
+        </div>
+        <div class="swiper-slide">
+          <h2 class="text-3xl text-white text-shadow-amber-400 text-shadow-md mb-2">Menu Item 4</h2>
+          <img src="src/img/menuItem4.jpg" alt="Menu Item 4" />
+        </div>
+        <div class="swiper-slide">
+          <h2 class="text-3xl text-white text-shadow-amber-400 text-shadow-md mb-2">Menu Item 5</h2>
+          <img src="src/img/menuItem5.jpg" alt="Menu Item 5" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="customerReview" class="py-20 px-20 bg-gray-800">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 rounded-2xl bg-white">
+      <!-- left side -->
+      <div class="leftside space-y-8 text-black p-18">
+        <div class="rounded-full bg-red-500 w-20 h-20  flex items-center justify-center absolute hidden">
+          <i class="fa-solid fa-quote-left text-4xl"></i>
+        </div>
+        <h2 class="text-4xl font-bold capitalize text-shadow-gray-500 text-shadow-lg">What our Customer Say</h2>
+        <p class="text-gray-500  text-shadow-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+          expedita accusamus! Culpa, libero magni?</p>
+        <a href="#"
+          class="bg-amber-400 font-bold px-6 py-3 rounded-2xl shadow-amber-600 shadow-lg hover:bg-amber-500 transition-colors duration-300 inline-block text-shadow-black text-shadow-lg text-white">Read
+          More</a>
+      </div>
+      <!-- right side -->
+      <div class="rightside md:col-span-2 flex flex-col justify-between relative px-10 py-8">
+        <div
+          class="reviewCardContainer relative md:top-[-4rem] md:right-[-4rem] grid grid-cols-1 md:grid-cols-3 gap-y-6 md:gap-3">
+          <div class="relative reviewCard overflow-hidden shadow-gray-600 shadow-lg ring-gray-500 ring-1 rounded-3xl">
+            <img src="src/img/person1.jpg" alt="profile"
+              class="aspect-[4/3] w-full object-cover object-center rounded-t-3xl">
+            <div class="reviewContent relative bg-white -mt-14 px-5 py-6
+         rounded-t-3xl space-y-3">
+              <h2 class="reviewerName font-bold text-lg">@name</h2>
+              <p class="reviewText text-gray-500 md:line-clamp-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Dignissimos officia vitae aliquid eos ad, est suscipit similique earum! Tenetur suscipit placeat
+                ab repellendus nihil.</p>
+              <div class="reviewMetaDetails flex justify-between items-center">
+                <span class="reviewMeta font-bold">Service</span>
+                <span class="reviewStars ml-4">
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="relative reviewCard overflow-hidden shadow-gray-600 shadow-lg ring-gray-500 ring-1 rounded-3xl">
+            <img src="src/img/person2.jpg" alt="profile"
+              class="aspect-[4/3] w-full object-cover object-center rounded-t-3xl">
+            <div class="reviewContent relative bg-white -mt-14 px-5 py-6
+         rounded-t-3xl space-y-3">
+              <h2 class="reviewerName font-bold text-lg">@name</h2>
+              <p class="reviewText text-gray-500 md:line-clamp-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Dignissimos officia vitae aliquid eos ad, est suscipit similique earum! Tenetur suscipit placeat
+                ab repellendus nihil.</p>
+              <div class="reviewMetaDetails flex justify-between items-center">
+                <span class="reviewMeta font-bold">Service</span>
+                <span class="reviewStars ml-4">
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="relative reviewCard overflow-hidden shadow-gray-600 shadow-lg ring-gray-500 ring-1 rounded-3xl">
+            <img src="src/img/person3.jpg" alt="profile"
+              class="aspect-[4/3] w-full object-cover object-center rounded-t-3xl">
+            <div class="reviewContent relative bg-white -mt-14 px-5 py-6
+         rounded-t-3xl space-y-3">
+              <h2 class="reviewerName font-bold text-lg">@name</h2>
+              <p class="reviewText text-gray-500 md:line-clamp-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Dignissimos officia vitae aliquid eos ad, est suscipit similique earum! Tenetur suscipit placeat
+                ab repellendus nihil.</p>
+              <div class="reviewMetaDetails flex justify-between items-center">
+                <span class="reviewMeta font-bold">Service</span>
+                <span class="reviewStars ml-4">
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                  <i class="fa-solid fa-star text-amber-400"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location-contact" class="py-16 px-16 bg-gray-400/20">
+    <div id="contactHeader" class="text-center space-y-4 mb-14">
+      <div class="logo border-2 p-3 rounded-lg inline-block shadow-md">
+        <a href="index.html" class="text-black capitalize font-bold">your logo</a>
+      </div>
+      <h2 class="font-bold text-4xl text-black text-shadow-lg">Contact to @YourBussiness</h3>
+        <p class="text-gray-900 text-shadow-gray-700 text-shadow-md font-bold">Let us know how we can help</p>
+    </div>
+    <div id="contactCardHolder" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="contactCard bg-white shadow-lg px-4 py-6 rounded-2xl">
+        <div class="contactCardHeader pb-20"><i class="fa-solid fa-map-location-dot text-4xl"></i></div>
+        <div class="contactCardBody font-bold space-y-3">
+          <h3 class="text-4xl ">Address</h3>
+          <p>123 Street Name, Suite 100
+            City Name, State 12345
+            Country</p>
+          <a href="#"
+            class="mt-6 text-amber-600 hover:text-amber-400 hover:text-shadow-black hover:text-shadow-lg">@your location
+            link</a>
+        </div>
+      </div>
+      <div class="contactCard bg-white shadow-lg px-4 py-6 rounded-2xl">
+        <div class="contactCardHeader pb-20"><i class="fa-solid fa-phone-volume text-4xl"></i></div>
+        <div class="contactCardBody font-bold space-y-3">
+          <h3 class="text-4xl ">Call us</h3>
+          <p>+123456789</p>
+          <a href="#" class="mt-6 text-amber-600 hover:text-amber-400 hover:text-shadow-black hover:text-shadow-lg">Call
+            Now</a>
+        </div>
+      </div>
+      <div class="contactCard bg-white shadow-lg px-4 py-6 rounded-2xl">
+        <div class="contactCardHeader pb-20"><i class="fa-solid fa-clock text-4xl"></i></div>
+        <div class="contactCardBody font-bold space-y-3">
+          <h3 class="text-4xl ">Opening Hours</h3>
+          <p><strong class="mr-6">Mon - fri</strong> 9:00 - 17:00</p>
+          <p><strong class="mr-6">Sat - Sun</strong> 9:00 - 17:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-8">
+      <a href="#"
+        class="bg-amber-400 text-white font-bold px-6 py-3 rounded-2xl shadow-amber-600 shadow-lg hover:bg-amber-500 transition-colors duration-300 inline-block text-shadow-black text-shadow-lg">Get
+        Direction</a>
+    </div>
+  </section>
+
+  <section id="finalCTA" class="bg-black pt-8 pb-14">
+    <div>
+      <div>
+        <h2 class="text-4xl text-white text-shadow-gray-600 text-shadow-lg capitalize text-center font-bold mt-10 mb-6">
+          ready for a great night?
+        </h2>
+        <div class="text-center mt-10">
+          <a href="#"
+            class="bg-amber-400 text-white font-bold px-6 py-3 rounded-2xl shadow-amber-600 shadow-lg hover:bg-amber-500 transition-colors duration-300 inline-block text-shadow-black text-shadow-lg hover:text-lg">Book
+            Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer" class="bg-gray-900 text-gray-300 pt-14 pb-6 px-10">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+      <!-- Logo / About -->
+      <div class="space-y-4">
+        <div class="border inline-block px-4 py-2 rounded-lg font-bold text-white">
+          Your Logo
+        </div>
+        <p class="text-sm">
+          We create unforgettable experiences with great food, drinks, and service.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-white font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#hero-section" class="hover:text-amber-400">Home</a></li>
+          <li><a href="#aboutUs" class="hover:text-amber-400">About</a></li>
+          <li><a href="#menuHighlights" class="hover:text-amber-400">Menu</a></li>
+          <li><a href="#location-contact" class="hover:text-amber-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-white font-bold mb-4">Contact</h3>
+        <ul class="space-y-2 text-sm">
+          <li><i class="fa-solid fa-location-dot mr-2"></i>Thailand</li>
+          <li><i class="fa-solid fa-phone mr-2"></i>+123 456 789</li>
+          <li><i class="fa-solid fa-envelope mr-2"></i>info@email.com</li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="text-white font-bold mb-4">Follow Us</h3>
+        <div class="flex gap-4 text-xl">
+          <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-700 mt-10 pt-4 text-center text-sm text-gray-400">
+      © 2026 Your Business. All rights reserved.
+    </div>
+  </section>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
