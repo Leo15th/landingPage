@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>landing page</title>
-  <link rel="stylesheet" href="src/output.css" />
+  <link rel="stylesheet" href="src/output.css?v=20260113.1133" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
@@ -22,7 +22,7 @@
       </button>
       <div id="menu-items-holder" class="relative hidden md:block">
         <ul id="menu-items-box"
-          class="absolute md:relative top-[40px] md:top-auto right-0 md:right-auto w-[40vw] md:w-auto bg-gray-600/70 md:bg-transparent rounded-b-2xl md:rounded-none md:flex">
+          class="absolute md:relative top-[40px] md:top-auto right-0 md:right-auto w-[50vw] md:w-auto bg-gray-600/70 md:bg-transparent rounded-b-2xl md:rounded-none md:flex text-lg">
           <li class="menu-items"><a href="#">Home</a></li>
           <li class="menu-items"><a href="#">About</a></li>
           <li class="menu-items"><a href="#">Services</a></li>
@@ -37,7 +37,7 @@
     <div class="absolute inset-0 bg-black/50"></div>
 
     <div
-      class="relative bg-white/70 z-10 text-center space-y-8 px-10 md:px-20 py-10 rounded-lg text-white text-shadow-black text-shadow-lg shadow-gray-800 shadow-2xl max-w-3xl mx-auto">
+      class="relative bg-white/70 z-10 text-center space-y-8 px-4 md:px-20 py-10 rounded-lg text-white text-shadow-black text-shadow-lg shadow-gray-800 shadow-2xl max-w-3xl mx-auto">
       <h1 class="text-lg md:text-4xl font-bold">
         Welcome to Our <br />Landing Page
       </h1>
@@ -51,10 +51,10 @@
     </div>
   </section>
 
-  <section id="metaDetails" class="px-18 py-10 md:px-20 md:py-10 bg-gray-400/20">
+  <section id="metaDetails" class="ox-4 md:px-18 py-10 md:px-20 md:py-10 bg-gray-400/20">
     <div class="container grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center mx-auto">
       <div
-        class="h-full w-full flex flex-col items-center text-center px-8 py-4 space-y-4 shadow-lg shadow-gray-400 rounded-lg bg-white text-shadow-gray-400 text-shadow-lg">
+        class="h-full w-full flex flex-col items-center text-center px-4 md:px-8 py-4 space-y-4 shadow-lg shadow-gray-400 rounded-lg bg-white text-shadow-gray-400 text-shadow-lg">
         <h2 class="text-black text-center px-6 py-4 text-xl font-bold">
           Trusted by Clients
         </h2>
@@ -66,7 +66,7 @@
       </div>
 
       <div
-        class="h-full w-full flex flex-col items-center text-center px-8 py-4 space-y-4 shadow-lg shadow-gray-400 rounded-lg bg-white text-shadow-gray-400 text-shadow-lg">
+        class="h-full w-full flex flex-col items-center text-center px-4 md:px-8 py-4 space-y-4 shadow-lg shadow-gray-400 rounded-lg bg-white text-shadow-gray-400 text-shadow-lg">
         <h2 class="text-black text-center px-6 py-4 text-xl font-bold">
           Based in Thailand
         </h2>
@@ -74,7 +74,7 @@
       </div>
 
       <div
-        class="h-full w-full flex flex-col items-center text-center px-8 py-4 space-y-4 shadow-lg shadow-gray-400 rounded-lg bg-white text-shadow-gray-400 text-shadow-lg">
+        class="h-full w-full flex flex-col items-center text-center px-4 md:px-8 py-4 space-y-4 shadow-lg shadow-gray-400 rounded-lg bg-white text-shadow-gray-400 text-shadow-lg">
         <h2 class="text-black text-center px-6 py-4 text-xl font-bold">
           Avabilable for Work
         </h2>
@@ -90,7 +90,7 @@
         <img src="src/img/aboutUs-hero.jpg" alt="About Us Image"
           class="aspect-[4/3] object-cover rounded-2xl w-full h-full" />
       </div>
-      <div class="w-full h-full p-10 md:p-20 space-y-8 text-white text-center md:text-left">
+      <div class="w-full h-full p-4 md:p-20 space-y-8 text-white text-center md:text-left">
         <h2 class="text-4xl font-bold">About Us</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium adipisci hic eligendi veniam mollitia
           omnis assumenda sapiente repellat a molestiae excepturi aperiam, voluptatem atque?</p>
@@ -175,13 +175,10 @@
     </div>
   </section>
 
-  <section id="customerReview" class="py-20 px-20 bg-gray-800">
+  <section id="customerReview" class="py-10 px-4 md:p-20 bg-gray-800">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 rounded-2xl bg-white">
       <!-- left side -->
-      <div class="leftside space-y-8 text-black p-18">
-        <div class="rounded-full bg-red-500 w-20 h-20  flex items-center justify-center absolute hidden">
-          <i class="fa-solid fa-quote-left text-4xl"></i>
-        </div>
+      <div class="leftside space-y-8 text-black py-10 px-4">
         <h2 class="text-4xl font-bold capitalize text-shadow-gray-500 text-shadow-lg">What our Customer Say</h2>
         <p class="text-gray-500  text-shadow-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
           expedita accusamus! Culpa, libero magni?</p>
@@ -190,13 +187,13 @@
           More</a>
       </div>
       <!-- right side -->
-      <div class="rightside md:col-span-2 flex flex-col justify-between relative px-10 py-8">
+      <div class="rightside md:col-span-2 flex flex-col justify-between relative p-4 md:px-10 md:py-8">
         <div
           class="reviewCardContainer relative md:top-[-4rem] md:right-[-4rem] grid grid-cols-1 md:grid-cols-3 gap-y-6 md:gap-3">
           <div class="relative reviewCard overflow-hidden shadow-gray-600 shadow-lg ring-gray-500 ring-1 rounded-3xl">
             <img src="src/img/person1.jpg" alt="profile"
               class="aspect-[4/3] w-full object-cover object-center rounded-t-3xl">
-            <div class="reviewContent relative bg-white -mt-14 px-5 py-6
+            <div class="reviewContent relative bg-white -mt-14 p-3 md:px-5 md:py-6
          rounded-t-3xl space-y-3">
               <h2 class="reviewerName font-bold text-lg">@name</h2>
               <p class="reviewText text-gray-500 md:line-clamp-3">Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -217,7 +214,7 @@
           <div class="relative reviewCard overflow-hidden shadow-gray-600 shadow-lg ring-gray-500 ring-1 rounded-3xl">
             <img src="src/img/person2.jpg" alt="profile"
               class="aspect-[4/3] w-full object-cover object-center rounded-t-3xl">
-            <div class="reviewContent relative bg-white -mt-14 px-5 py-6
+            <div class="reviewContent relative bg-white -mt-14 p-3 md:px-5 md:py-6
          rounded-t-3xl space-y-3">
               <h2 class="reviewerName font-bold text-lg">@name</h2>
               <p class="reviewText text-gray-500 md:line-clamp-3">Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -238,7 +235,7 @@
           <div class="relative reviewCard overflow-hidden shadow-gray-600 shadow-lg ring-gray-500 ring-1 rounded-3xl">
             <img src="src/img/person3.jpg" alt="profile"
               class="aspect-[4/3] w-full object-cover object-center rounded-t-3xl">
-            <div class="reviewContent relative bg-white -mt-14 px-5 py-6
+            <div class="reviewContent relative bg-white -mt-14 p-3 md:px-5 md:py-6
          rounded-t-3xl space-y-3">
               <h2 class="reviewerName font-bold text-lg">@name</h2>
               <p class="reviewText text-gray-500 md:line-clamp-3">Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -378,7 +375,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  <script src="index.js"></script>
+  <script src="index.js?v=20260113.1133"></script>
 </body>
 
 </html>
